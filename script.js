@@ -28,6 +28,6 @@ document.getElementById('contact-form')?.addEventListener('submit', event => {
   const message = String(data.get('message') || '').trim();
   const subject = encodeURIComponent('Website inquiry from ' + name);
   const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-  // Replace this address with the confirmed business inbox before launch.
-  window.location.href = `mailto:hello@renegadeempiretech.com?subject=${subject}&body=${body}`;
+  // Send inquiries to the Renegade Empire Tech support inbox.
+  window.location.href = `mailto:support@renegadeempiretech.com?subject=${subject}&body=${body}`;
 });
